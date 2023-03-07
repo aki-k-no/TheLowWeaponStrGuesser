@@ -1,0 +1,302 @@
+#select_menu{
+	text-align:center;
+}
+
+.selector {
+  background-color: #ffffff;
+  width: 200px;
+  height: 50px;
+  color: #000000;
+  font-size: 25px;
+  font-family: 'Kiwi Maru', sans-serif;
+  border-radius: 10px; 
+}
+.selected {
+  background-color: #ffff00;
+  width: 200px;
+  height: 50px;
+  color: #000000;
+  font-size: 25px;
+  font-family: 'Kiwi Maru', sans-serif;
+  border-radius: 10px; 
+}
+
+.selector:hover {
+  background-color: #aaaaaa;
+  width: 200px;
+  height: 50px;
+  color: #000000;
+  font-size: 25px;
+  font-family: 'Kiwi Maru', sans-serif;
+  border-radius: 10px; 
+}
+
+.up {
+  background-color: #ffffff;
+  border-color: #222222;
+  border-width: 1px;
+  color: #008a0b;
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+
+  border-radius: 4px; 
+}
+
+.up:hover {
+  background-color: #aaaaaa;
+  border-color: #222222;
+  border-width: 1px;
+  color: #008a0b;
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+
+  border-radius: 4px; 	
+}
+
+#data_input{
+	width:100%;
+	margin: 0 auto;
+}
+
+#almighty{
+	width: 600px;
+	margin: 0 auto;
+}
+
+.up.down {
+  background-color: #ffffff;
+  border-color: #222222;
+  border-width: 1px;
+  color: #ff0000;
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+
+  border-radius: 4px; 
+}
+
+.up.down:hover {
+  background-color: #aaaaaa;
+  border-color: #222222;
+  border-width: 1px;
+  color: #ff0000;
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+
+  border-radius: 4px; 	
+}
+
+.weapon_str{
+  width: 200px;
+  height: 30px;
+  font-size:15px;
+}
+
+.percent{
+  width: 200px;
+  height: 30px;
+  font-size:15px;
+}
+
+header{
+	font-size:40px;
+	font-family: 'Dela Gothic One', cursive;
+
+
+	text-align:center;
+}
+.add_data_parent {
+  display:inline-block;
+  width: 250px;
+  height: 30px;
+  text-align:center;
+}
+
+.add_data {
+  background-color: #ffffff;
+  height: 30px;
+  color: #000000;
+  font-size: 15px;
+  border-width: 1px;
+  border-radius: 10px; 
+}
+
+.add_data:hover {
+  background-color: #aaaaaa;
+  height: 30px;
+  color: #000000;
+  font-size: 15px;
+  border-width: 1px;
+  border-radius: 10px; 
+}
+
+.remove_data_parent {
+  display:inline-block;
+  width: 250px;
+  height: 30px;
+  text-align:center;
+}
+
+.remove_data {
+  background-color: #ffffff;
+  
+  
+  height: 30px;
+  color: #000000;
+  font-size: 15px;
+  border-width: 1px;
+  border-radius: 10px; 
+}
+
+.remove_data:hover {
+  background-color: #aaaaaa;
+  
+  
+  height: 30px;
+  color: #000000;
+  font-size: 15px;
+  border-width: 1px;
+  border-radius: 10px; 
+}
+#splitter{
+	width:100%;
+}
+.half{
+	border-right: 1px solid #000000;
+	width:50%;
+}
+
+.half_else{
+	width:100%;
+	vertical-align: top;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#result_data{
+	width:100%;
+	max-width: 600px;
+	margin: 0 auto;
+	
+	
+}
+
+#result_data .headline{
+	font-size: 30px;
+	font-family: 'Kiwi Maru', sans-serif;
+	
+}
+
+#result_data .calced{
+	font-size: 40px;
+	font-family: 'Tilt Warp', cursive;
+	
+}
+
+#output{
+	width:50%;
+	margin: 0 auto;
+}
+
+#output .headline{
+	width: 40%;
+	text-align:center;
+	font-size: 30px;
+	font-family: 'Kiwi Maru', sans-serif;
+}
+
+#output .sign{
+	width:20%;
+	font-size: 30px;
+	font-family: 'Kiwi Maru', sans-serif;
+	text-align: center;
+	
+}
+
+#output .input_box{
+	width: 40%;
+	text-align:center;
+	font-size: 30px;
+	font-family: 'Kiwi Maru', sans-serif;
+}
+
+#output .input_box input{
+	background-color:#ffffff;
+	width: 50%;
+	height:30px;
+	text-align:center;
+	font-size: 15px;
+	border-width: 1px;
+}
+
+
+
+#output .output_field{
+	width: 40%;
+	text-align:center;
+	font-size: 40px;
+	font-family: 'Tilt Warp', cursive;
+}
+
+#up_down_selec{
+	 background-color: #ffffff;
+  border-color: #222222;
+  border-width: 1px;
+  color: #008a0b;
+  width: 100px;
+  height: 35px;
+  font-size: 20px;
+
+  border-radius: 4px; 
+}
+
+#up_down_selec:hover{
+  background-color: #aaaaaa;
+  border-color: #222222;
+  border-width: 1px;
+  color: #008a0b;
+  width: 100px;
+  height: 35px;
+  font-size: 20px;
+
+  border-radius: 4px; 
+}
+
+#output .sign button{
+	background-color:#ffffff;
+	width: 60px;
+	height: 50px;
+	text-align:center;
+	font-size: 30px;
+	font-family: 'Kiwi Maru', sans-serif;
+	border-width:0px;
+}
+
+#output .sign button:hover{
+	background-color:#aaaaaa;
+	width: 60px;
+	height: 50px;
+	text-align:center;
+	font-size: 30px;
+	font-family: 'Kiwi Maru', sans-serif;
+	border-radius: 5px;
+	border-width: 1px;
+}
+
+.weapon_str_ind{
+	font-size:20px;
+  font-family: 'Kiwi Maru', sans-serif;
+}
+
+.updown_indicator{
+	font-size:20px;
+  font-family: 'Kiwi Maru', sans-serif;
+}
+
+.percent_ind{
+	font-size:20px;
+  font-family: 'Kiwi Maru', sans-serif;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<HTML>
+    <HEAD lang="ja">
+		<meta charset="UTF-8">
+		<title>TheLow武器確率推測ツール Web版</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Stick&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Stick&family=Yusei+Magic&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Kaisei+Decol&family=Stick&family=Yusei+Magic&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Kaisei+Decol&family=Kiwi+Maru:wght@300&family=Stick&family=Yusei+Magic&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+
+    </HEAD>
+    <BODY>
+		<header>TheLow 武器確率推測ツール Web版</header>
+	
+		<br>
+		<hr>
+		<br>
+		<div id="select_menu"><button class="selector" style="bgcolor: #ffff00">なんでも</button>
+		<button class="selector">反転反転聖剣</button>
+		<button class="selector">冥剣</button>
+		<button class="selector">無反転聖剣</button>
+		<button class="selector">アムル</button>
+		<button class="selector">RoA</button>
+		<button class="selector">ブリテン</button>
+		<button class="selector">繊翳</button>
+		<button class="selector">ヘブンレイ</button>
+		<button class="selector">Satan</button>
+		<button class="selector">ポテト</button>
+		<button class="selector">リアライザ</button>
+		<button class="selector">エタペン</button>
+    </div>
+    <br>
+    <hr>
+    <br>
+	<table id="output">
+	<thead>
+	<td class="headline">攻撃力</td><td class="sign">⇆</td><td class="headline">確率</td>
+	</thead>
+	<tbody>
+	<td class="input_box"><input type="number" placeholder="攻撃力から推測" id="from_str_input"></td><td class="sign"><button id="from_str">→</button></td><td class="output_field" id="from_str_output">0%</td>
+	</tbody>
+	<tbody>
+	<td class="output_field" id="from_percent_output">0</td><td class="sign"><button id="from_percent">←</button></td><td class="input_box"><button id="up_down_selec">上振れ</button><input type="number" placeholder="確率から推測" id="from_percent_input"></td>
+	</tbody>
+	
+	
+	</table>
+	<br><hr><br>
+	<table id="splitter">
+	<tbody>
+	<th class="half">
+    <div id="data_input">
+    <table id="almighty">
+	<tbody>
+    <th><span class="weapon_str_ind">武器の攻撃力</span></th><th><span class="updown_indicator">上振れ/下振れ</span></th><th><span class="percent_ind">武器の確率(数値)</span><BR></th>
+    </tbody>
+    <tbody>
+    <td><input type="number" class="weapon_str" placeholder="武器の攻撃力(例:231.89)"></td><td><button class="switch up">上振れ</button></td><td><input type="number" class="percent" placeholder="武器の確率(例23.1)"></td>
+    </tbody>
+	<tbody>
+    <td><input type="number" class="weapon_str" placeholder="武器の攻撃力(例:231.89)"></td><td><button class="switch up">上振れ</button></td><td><input type="number" class="percent" placeholder="武器の確率(例23.1)"></td>
+    </tbody>
+    </table>
+	<BR>
+	<span class="add_data_parent">
+	<button class="add_data"><span style="margin: 30px;">入力欄<span style="color: #008a0b;">追加</span></span></button>
+	</span>
+	<span class="remove_data_parent">
+	<button class="remove_data"><span style="margin: 30px;">入力欄<span style="color:#ff0000;">削除</span></span></button>
+	</span>
+    </div>
+	</th>
+	<th class="half_else">
+	<table id="result_data">
+	<tbody>
+	<td class="headline">中央値(推測値)</td>
+	<td class="headline">標準偏差(推測値)</td>
+	</tbody>
+	<tbody>
+	<td><br><br></td>
+	</tbody>
+	<tbody>
+	<td class="calced" id="average_field">0</td>
+	<td class="calced" id="sd_field">0</td>
+	</tbody>
+	</table>
+	</th>
+	</tbody>
+	</table>
+    
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="normal_distribution.js"></script>
+    </BODY>
+</HTML>
