@@ -26,7 +26,7 @@ var doer=function init(){
 	
 	$("#from_str").click(function(){
 		var percent=estimate_percent_from_str($("#from_str_input").val());
-		$("#from_str_output").html((percent>0.5) ? '<span style="color:#ff0000">上振れ</span>'+Math.round((1 - percent)*200*10000)/10000+"%" : '<span style="color:#ff0000">下振れ</span>'+Math.round(percent*200*10000)/10000+"%")
+		$("#from_str_output").html((percent>0.5) ? '<span style="color:#008a0b">上振れ</span>'+Math.round((1 - percent)*200*10000)/10000+"%" : '<span style="color:#ff0000">下振れ</span>'+Math.round(percent*200*10000)/10000+"%")
 	});
 	
 	$("#from_percent").click(function(){
