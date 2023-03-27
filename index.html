@@ -21,15 +21,6 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
 
-	    <!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-08W0FB0YBN"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'G-08W0FB0YBN');
-		</script>
     </HEAD>
     <BODY>
 		<header>TheLow 武器確率推測ツール Web版</header>
@@ -44,13 +35,13 @@
 		<button class="selector">アムル</button>
 		<button class="selector">RoA</button>
 		<button class="selector">ブリテン</button>
+		<button class="selector">シャルル</button>
 		<button class="selector">繊翳</button>
 		<button class="selector">ヘブンレイ</button>
 		<button class="selector">Satan</button>
 		<button class="selector">ポテト</button>
 		<button class="selector">リアライザ</button>
 		<button class="selector">エタペン</button>
-		<button class="selector">グラエン</button>
     </div>
     <br>
     <hr>
@@ -60,10 +51,10 @@
 	<td class="headline">攻撃力</td><td class="sign">⇆</td><td class="headline">確率</td>
 	</thead>
 	<tbody>
-	<td class="input_box"><input type="number" placeholder="攻撃力から推測" id="from_str_input"></td><td class="sign"><button id="from_str">推測</button></td><td class="output_field" id="from_str_output">0%</td>
+	<td class="input_box"><input type="number" placeholder="攻撃力から推測" id="from_str_input"></td><td class="sign"><button id="from_str">→</button></td><td class="output_field" id="from_str_output">0%</td>
 	</tbody>
 	<tbody>
-	<td class="output_field" id="from_percent_output">0</td><td class="sign"><button id="from_percent">推測</button></td><td class="input_box"><button id="up_down_selec">上振れ</button><input type="number" placeholder="確率から推測" id="from_percent_input"></td>
+	<td class="output_field" id="from_percent_output">0</td><td class="sign"><button id="from_percent">←</button></td><td class="input_box"><button id="up_down_selec">上振れ</button><input type="number" placeholder="確率から推測" id="from_percent_input"></td>
 	</tbody>
 	
 	
